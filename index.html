@@ -1,11 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    hello! My name is janvi
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Skills</li>
+                <li>Certificates</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="landingpg">
+        <h1>Janvi Patel</h1>
+        <p>"Crafting digital solutions through code, my portfolio showcases fusion <br>of creativity and technical
+            expertise in the realm of software development."</p>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/janvi-patel-02b860227/">
+                    <i class="fa fa-linkedin-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/solstice-janvi">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_janviiiiiii_/?next=%2F">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1jks2PRTXSqiKaotrqz6RruyyFVVppx3m/view?usp=sharing">
+                    <i class="fa fa-file-pdf-o"></i>
+                </a>
+
+            </li>
+        </ul>
+        <span onclick="scrollDown()"><a href="#"></a></span>
+    </div>
+    <div class="about">
+        <img src="WhatsApp Image 2024-04-13 at 12.55.02.jpeg">
+        <div class="intro">
+            <h3>HI, There!</h3>
+            <h6>I'm Janvi Patel</h6>
+            <h2>
+                <pre>  SOFTWARE ENGINEER  </pre>
+            </h2>
+            <p>I am a passionate and versatile software engineer with a keen eye for detail and a knack for
+                problem-solving. With a strong foundation in computer science principles and years of hands-on
+                experience, I thrive in dynamic environments where I can collaborate with interdisciplinary teams to
+                architect, develop, and deploy innovative software solutions. My expertise spans across various
+                technologies and languages, allowing me to adapt quickly to new challenges and deliver robust, scalable,
+                and efficient code. From conceptualization to implementation, I am committed to crafting elegant and
+                user-centric software that exceeds expectations and drives positive impact.</p>
+            <div class="boxes">
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="box">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            </intro>
+        </div>
+    </div>
+    <div class="menu-card">
+        <h4>Explore My Journey</h4>
+
+        <div class="menu">
+            <div class="card">
+                <span
+                    style='font-size:50px; opacity: 0.4; color: #5C8DF6; transform: translate(40px, 40px);'>&#9702;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-87px, 64px);'>&#9673;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-80px, 220px);'>&#9676;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-200px, 220px);'>&#9679;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-249px, 170px);'>&#9678;</span>
+                <span
+                    style='font-size:50px;opacity: 0.4;  color: #5C8DF6;position: absolute;transform: translate(-41px, 85px);'>&#9702;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-57px, 193px);'>&#9673;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-227px, 143px);'>&#9676;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-65px, 52px);'>&#9679;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-109px, 236px);'>&#9678;</span>
+                <a href="#">
+                    <div class="im ">
+                        <img src="project.svg" alt="">
+                    </div>
+                    <h2>PROJECTS</h2>
+                </a>
+            </div>
+            <div class="card">
+                <span
+                    style='font-size:50px; opacity: 0.4; color: #5C8DF6; transform: translate(40px, 40px);'>&#9702;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-87px, 64px);'>&#9673;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-80px, 220px);'>&#9676;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-200px, 220px);'>&#9679;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-249px, 170px);'>&#9678;</span>
+                <span
+                    style='font-size:50px;opacity: 0.4;  color: #5C8DF6;position: absolute;transform: translate(-41px, 85px);'>&#9702;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-57px, 193px);'>&#9673;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-227px, 143px);'>&#9676;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-65px, 52px);'>&#9679;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-109px, 236px);'>&#9678;</span>
+                <a href="#"></a>
+                <div class="im"><img src="skill.svg" alt=""></div>
+                <h2>SKILLS</h2></a>
+            </div>
+            <div class="card">
+                <span
+                    style='font-size:50px; opacity: 0.4; color: #5C8DF6; transform: translate(40px, 40px);'>&#9702;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-87px, 64px);'>&#9673;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-80px, 220px);'>&#9676;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-200px, 220px);'>&#9679;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-249px, 170px);'>&#9678;</span>
+                <span
+                    style='font-size:50px;opacity: 0.4;  color: #5C8DF6;position: absolute;transform: translate(-41px, 85px);'>&#9702;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-57px, 193px);'>&#9673;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-227px, 143px);'>&#9676;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-65px, 52px);'>&#9679;</span>
+                <span
+                    style='font-size:30px;opacity: 0.4; color: #5C8DF6; position:absolute; transform: translate(-109px, 236px);'>&#9678;</span>
+                <a href="#"></a>
+                <div class="im"><img src="certificate.svg" alt=""></div>
+                <h2>CERTIFICATES</h2></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="skillsec">
+        <h2>Skills & Proficiencies</h2>
+        <div class="container">
+            <div class="cards">
+                <div class="card red">
+                    <p class="tip">professional skills</p>
+                    <p class="second-text">
+                        <p>Team work </p>
+                        <p>Language Proficiency</p>
+                           <p>Technical Writing</p>
+                           <p> Presentation Skills</p>
+                           <p> Public Speaking</p>
+                           <p>Customer Service</p>
+                            <p> Social Media Management</p>
+                           <p> Networking</p>
+                           <p> Event Planning</p>
+                           <p>Graphic Design</p>
+                           <p>Video Editing </p>
+                    </p>
+                </div>
+                <div class="card blue">
+                    <p class="tip">Technical Skills</p>
+                    <p class="second-text">
+                        <p>c</p>
+                        <p>c++</p>
+                        <p>javascript</p>
+                        <p>pyhton</p>
+                        <p>html</p>
+                        <p>css</p>
+                        <p>bootstrap</p>
+                        <p>tailswind</p>
+                        <p>mySql</p>
+                        <p>linux</p>
+                        <p>GIT</p>
+
+                    </p>
+                </div>
+                <div class="card green">
+                    <p class="tip">Soft Skills</p>
+                    <p class="second-text">
+                        <p>Communication (Verbal and Written)</p>
+                            <p>Leadership</p>            
+                <p>Problem-solving</p>
+                <p>Teamwork and Collaboration</p>
+                <p>Time Management</p>
+                <p>Adaptability</p>
+                <p> Creativity</p>
+               <p>Critical Thinking</p>
+                <p>Emotional Intelligence</p>
+                <p>Conflict Resolution</p>
+                
+                    </p>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div class="services">
+        <h2>What i do</h2>
+        <div class="cont">
+            <div class="box">
+                <div class="card">
+                    <div class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px" width="38px" version="1.1" id="heart" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                        <linearGradient id="gradientColor">
+                          <stop offset="5%" stop-color="#7eaaff"></stop>
+                          <stop offset="95%" stop-color="#ff48fb"></stop>
+                        </linearGradient>
+                        <g>
+                          <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="title">Web Development</p>
+                    <p class="text"> Designs and builds websites, utilizing programming languages and technologies to create functional and visually appealing online experiences .</p>
+                  </div>
+                  <div class="card">
+                    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px" width="38px" version="1.1" id="heart" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                      
+                        <linearGradient id="gradientColor">
+                          <stop offset="5%" stop-color="#7eaaff"></stop>
+                          <stop offset="95%" stop-color="#ff48fb"></stop>
+                        </linearGradient>
+                        <g>
+                          <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="title">Database Management</p>
+                    <p class="text">Organizing, storing and retrieving data efficiently, ensuring its integrity, security, and accessibilty for various applications and users.</p>
+                  </div>
+                  <div class="card">
+                    <div class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px" width="38px" version="1.1" id="heart" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                        <linearGradient id="gradientColor">
+                          <stop offset="5%" stop-color="#7eaaff"></stop>
+                          <stop offset="95%" stop-color="#ff48fb"></stop>
+                        </linearGradient>
+                        <g>
+                          <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="title">Data Analysis</p>
+                    <p class="text">Extracting and interpreting large sets of data to extract meaningful insights, inform decision making and drive strategic actions or improvement.</p>
+                  </div>
+                  <div class="card">
+                    <div class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="38px" width="38px" version="1.1" id="heart" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                        <linearGradient id="gradientColor">
+                          <stop offset="5%" stop-color="#7eaaff"></stop>
+                          <stop offset="95%" stop-color="#ff48fb"></stop>
+                        </linearGradient>
+                        <g>
+                          <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <p class="title">DSA</p>
+                    <p class="text">Study and implementation of methods for organizing and manipulaating data efficiently , crucial in software development for optimal performance and problem-solving.</p>
+                  </div>
+                
+                </div>
+                <section class="dots-container">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </section>
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <div class="card c">
+                <p>Mine-Tech</p>
+                <div class="loadcell">
+                    <div class="load">
+
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                    </div>
+                    <div class="load">
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                    </div>
+                    <div class="load">
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                        <div class="loader">
+                            <div class="cell d-0"></div>
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+                            <div class="cell d-1"></div>
+                            <div class="cell d-2"></div>
+
+
+                            <div class="cell d-2"></div>
+                            <div class="cell d-3"></div>
+
+
+                            <div class="cell d-3"></div>
+                            <div class="cell d-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="card c1">
+                <p>GemstoneGlow</p>
+                <div class="loadcell2">
+                    <div class="loader">
+                        <div class="load1"></div>
+                        <div class="load2"></div>
+                        <div class="load3"></div>
+                        <div class="load4"></div>
+                        <div class="load5"></div>
+                        <div class="load6"></div>
+                        <div class="load7"></div>
+                        <div class="load8"></div>
+                        <div class="load9"></div>
+                    </div>
+                </div>
+
+            </div>
+           
+            <div class="card">
+                <p>BulletinWeb</p>
+                <div class="loadcell3">
+                    <div class="load3">
+                        <div class="spinner"></div>
+                    </div>
+                    <div class="load3">
+                        <div class="spinner s1"></div>
+                        <div class="spinner s2"></div>
+                        <div class="spinner s3"></div>
+                    </div>
+                    <div class="load3">
+                        <div class="spinner s4"></div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="resume">
+            <a href="https://drive.google.com/file/d/1jks2PRTXSqiKaotrqz6RruyyFVVppx3m/view?usp=sharing">
+            <div class="card">
+                <p>My Resume</p>
+                <div class="loader">
+                    <div class="loader-inner">
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                        <div class="loader-block"></div>
+                    </div>
+                </div>
+            
+            </div>
+        </a>
+        </div>
+
+
+    </div>
+    
+
+
+
+
+
+   
+
+        <div class="achivements"></div>
+
+
+       
+
+    <script src="script.js"></script>
 </body>
+
 </html>
